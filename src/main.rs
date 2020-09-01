@@ -5,9 +5,9 @@ use std::cmp::Ordering;
 fn main() {
     println!("Welcome to guessing the number! \n");
     let secret_number = rand::thread_rng().gen_range(0, 101);
+    println!("number generated \n");
 
     loop {
-        println!("number generated \n");
         println!("Guess the number: ");
         let mut guess = String::new();
 
